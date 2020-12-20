@@ -1,4 +1,4 @@
-@debug
+ @debug
 Feature: File Upload
   Background:
     * url 'https://filebin.net'
