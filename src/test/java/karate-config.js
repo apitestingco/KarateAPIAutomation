@@ -5,9 +5,7 @@ function fn() {
     env = 'dev';
   }
   var config = {
-    env: env,
-	url: 'http://localhost:8081/'
-  }
+    env: env  }
   if (env == 'dev') {
     // customize
     // e.g. config.foo = 'bar';
