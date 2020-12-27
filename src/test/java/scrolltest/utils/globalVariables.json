@@ -1,0 +1,5 @@
+{
+    "baseURL" : "the-internet.herokuapp.com/basic_auth",
+    "userName" : "admin",
+    "userPassword" : "admin"
+}

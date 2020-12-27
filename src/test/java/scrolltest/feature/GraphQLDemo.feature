@@ -1,4 +1,3 @@
-@debug
 Feature: GraphQL
   Background:
     * url 'https://api.graphql.jobs'
