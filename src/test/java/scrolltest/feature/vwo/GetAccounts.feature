@@ -1,13 +1,16 @@
+@debug
+@debug
 Feature: Get Auth Account data.
     Background: Background
-    * def cookie = call read('classpath:Login.feature')
-    * def authToken = signIn.authToken
+    * def cookieData = call read('Login.feature')
 
 
     Scenario: Yes
-        Given url 'https://app.vwo.com/account?accountId=531510'
+        * configure cookies = cookieData
+        * url 'https://app.vwo.com/'
+        Given path 'account?accountId=531510'
         When method GET
         Then status 200
-        Then match response.id = '531510'
+        Then match response.accountId = '531510'
 
 

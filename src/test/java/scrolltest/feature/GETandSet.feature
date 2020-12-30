@@ -31,14 +31,14 @@ Feature: GET AND SET ExAMPLE
     # * match myJson == { foo: 'world' }  
 
 
-    # Scenario: set multiple
-    # * def cat = { name: '' }
-    # * set cat
-    # | path   | value |
-    # | name   | 'Bob' |
-    # | age    | 5     |
+    Scenario: set multiple
+    * def cat = { name: '' }
+    * set cat
+    | path   | value |
+    | name   | 'Bob' |
+    | age    | 5     |
 
-    # * match cat == { name: 'Bob', age: 5 }
+    * match cat == { name: 'Bob', age: 5 }
 
 
     # https://github.com/intuit/karate/blob/master/karate-demo/src/test/java/demo/headers/headers.feature
