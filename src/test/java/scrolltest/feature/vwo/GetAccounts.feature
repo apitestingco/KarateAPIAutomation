@@ -1,5 +1,3 @@
-@debug
-@debug
 Feature: Get Auth Account data.
     Background: Background
     * def cookieData = call read('Login.feature')

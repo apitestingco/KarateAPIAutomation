@@ -27,6 +27,13 @@ Feature: Person CRUD
     When method POST
     Then status 201
     Then match response == '#object'
+    * def jsonSchemaExpected =
+    """
+      {
+        "id" : "#number"
+      }
+    """
+    Then match response == jsonSchemaExpected
 
     * def personId = response.id
 

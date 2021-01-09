@@ -5,4 +5,3 @@ Scenario: Assertions Take
     Then status 200
     * print 'I got IP is :', karate.pretty(response)
     Then assert response == '103.69.25.68'
- 
